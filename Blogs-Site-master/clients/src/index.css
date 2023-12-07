@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Reset some default styling */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styling */
+.navDiv {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.navUl {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end; /* Change to flex-end for right alignment */
+  align-items: center;
+  
+}
+
+.navUl li {
+  margin: 20px;
+}
+
+.navUl a {
+  text-transform: capitalize;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.navUl a:hover {
+  color: black;
+  border-radius: 5px;
+  background-color: white; /* Change the color on hover to your desired color */
+}
+
+.logo {
+  width: 180px; /* Adjust the size as needed */
+  height: 60px;
+}
+
+.logoutBtn {
+  cursor: pointer;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  .navUl {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navUl a {
+    margin-top: 10px;
+  }
+}
+
+
+.logoutBtn:hover {
+  background-color: rgb(182, 12, 12);
+}
+.loginForm button:hover {
+  background-color: green;
+}
+
+.inner2Div {
+  /* width: 60vw; */
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.inner2Div:hover {
+  background-color: transparent;
+}
+
+#navLine {
+  display: none;
+  border: 2px solid wheat;
+}
+
+#navCrose {
+  display: none;
+  border: 2px solid wheat;
+}
+
+.secondDiv {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 100%;
+  align-items: center;
+  padding: 5px 2rem;
+  background-color: rgb(24, 24, 24);
+}
+
+.sideBar {
+  background-color: lightslategrey;
+
+  height: fit-content;
+  border-radius: 0 0 20px 0;
+  /* float: left; */
+  /* width: 20vw; */
+
+  border: 2px solid white;
+  border-top: 1px solid lightslategrey;
+  border-left: 0px;
+  box-shadow: 1px 1px 8px black;
+}
+
+.sideBar p {
+  /* font-size: 1.5vw; */
+  color: white;
+
+  margin: 1rem;
+}
+
+.sideBar p:hover {
+  background-color: rgba(34, 32, 32, 0.596);
+  border-radius: 0 30px 30px 0;
+}
+
+.headerDiv {
+  display: flex;
+
+  justify-content: center;
+  text-align: center;
+}
+
+.search-input {
+  padding: 10px;
+
+  right: 0;
+  border: 2px solid;
+  color: black;
+  box-shadow: 1px 1px 8px black;
+  border-radius: 10px;
+}
+
+.productDiv {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.homeDiv {
+  /* margin-top: 1rem; */
+  /* float: right; */
+  /* width:90vw; */
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  /* margin-left: 1rem; */
+  /* overflow: hidden auto; */
+  align-items: center;
+  /* flex-wrap: wrap-reverse; */
+  /* justify-content: center;
+   */
+  gap: 2rem;
+}
+
+.aboutMain {
+  display: flex;
+  justify-content: center;
+}
+.about {
+  width: 70vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 2px solid black;
+  padding: 2rem;
+  /* font-family: system-ui; */
+  margin: 3rem;
+}
+.aboutH1::first-letter {
+  font-size: 5rem;
+  color: rgb(44, 184, 210);
+  margin-right: 5px;
+}
+.linkedAbout,
+.socialmediaLink,
+.addstoryfooter {
+  text-decoration: none;
+  padding: 15px 2rem;
+  font-size: larger;
+  font-weight: bolder;
+  background-color: rgb(44, 184, 210);
+  color: white;
+  border-radius: 10px;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.headerinnerDiv {
+  margin: 2rem;
+  width: 90vw;
+  box-shadow: 1px 1px 15px black;
+  border: 2px solid white;
+
+  min-height: 1vh;
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: lightslategrey;
+  border-radius: 10px;
+}
+
+.innerDiv {
+  box-shadow: 1px 1px 15px black;
+  border: 2px solid white;
+
+  width: 75vw;
+  min-height: 1vh;
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: lightslategrey;
+  border-radius: 10px;
+}
+
+.innerDiv h1 {
+  color: aliceblue;
+  text-shadow: 1px 1px 8px black;
+}
+.homePara {
+  height: 2rem;
+  overflow: hidden;
+}
+
+.loginDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  background-color: lightslategrey;
+  border: 3px solid rgb(9, 60, 77);
+  justify-content: center;
+  box-shadow: 1px 1px 8px black;
+
+  align-items: center;
+  gap: 1rem;
+  height: 60vh;
+  width: 60vw;
+  border-radius: 20px;
+}
+
+.loginForm input,
+.loginForm textarea {
+  width: 70%;
+  background-color: rgb(9, 60, 77);
+  box-shadow: 1px 1px 8px black;
+  border: 3px solid rgb(9, 60, 77);
+  padding: 1vh;
+}
+.mainhomeandside {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+.loginForm div {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm button {
+  background-color: rgb(9, 60, 77);
+  color: aliceblue;
+  border: 3px solid rgb(9, 60, 77);
+  padding: 5px 1rem;
+  box-shadow: 1px 1px 8px black;
+
+  font-size: medium;
+}
+
+.signUplink {
+  background-color: rgb(9, 60, 77);
+  color: aliceblue;
+  border: 3px solid rgb(9, 60, 77);
+  padding: 5px 1rem;
+  box-shadow: 1px 1px 8px black;
+  text-decoration: none;
+}
+
+.logo {
+  border: 5px solid blanchedalmond;
+  box-shadow: 1px 1px 8px black;
+  border-radius: 100px;
+  width: 3.5rem;
+}
+#linkLogo {
+  position: absolute;
+  left: 3rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 8px black;
+}
+.icon {
+  display: flex;
+  justify-content: space-around;
+
+  width: 10vw;
+}
+.icon2link:hover {
+  background-color: transparent;
+  color: greenyellow;
+}
+.icon a {
+  /* text-decoration: none; */
+  color: rgb(24, 23, 23);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(53, 121, 164);
+  box-shadow: 1px 1px 8px black inset;
+  border-radius: 100px;
+}
+
+@media screen and (max-width: 1160px) {
+  .about {
+    width: 90%;
+  }
+  .linkedAbout {
+    width: 100%;
+  }
+  .sideBar {
+    display: none;
+    overflow: hidden auto;
+    position: absolute;
+    width: 37vw;
+    height: 50vh;
+    box-shadow: 1px 1px 8px black inset;
+
+    background-color: rgba(105, 149, 177, 0.877);
+  }
+
+  .homeDiv {
+    width: 100%;
+  }
+
+  .innerDiv {
+    width: 99vw;
+  }
+
+  #navLine {
+    display: block;
+  }
+
+  .paraTopic {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .navUl a,
+  .logoutBtn {
+    font-size: small;
+  }
+  .logo {
+    left: 1rem;
+    width: 3rem;
+  }
+  .loginForm {
+    width: 90vw;
+  }
+  .sideBar {
+    width: 100vw;
+  }
+  #linkLogo {
+    position: static;
+  }
+  .navUl {
+    padding: 1rem 0;
+    gap: 1rem;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .navUl {
+    width: 100%;
+  }
+}
